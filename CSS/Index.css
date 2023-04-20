@@ -1,0 +1,338 @@
+/* selector * toda la pagina */
+
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Estilo Cuerpo  */
+body{
+    font-family:'roboto' sans-serif;
+    margin: 0;
+}
+
+/* Tamaño letra */
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+/* Botones */
+button{
+font-size: 1.5em;
+font-weight: bold;
+padding: 5px 20px;
+border-radius: 10px;
+border: 1px solid #000;
+box-shadow: 2px 2px 10px #005;
+color: white;
+background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(19, 98, 202);
+}
+
+/* Estilos de los contenedores */
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/* Color acento */
+.color-acento{color:blueviolet}
+
+/* Estilos de los Headers */
+header{
+    background-color: rgb(245, 245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+/* Estilo de la  seccion */
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("img/Noticias.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+/* Tamaño boton */
+#hero button{
+    font-size: 1.75em;
+}
+/* Seccion de tecnologia */
+#tecnologia .container{
+    text-align: center;   
+    padding: 200px 12px;   
+}
+
+/* Seccion otras-noticias */
+
+#otras-noticias{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#otras-noticias .container{
+    padding: 150px 12px;
+}
+
+#otras-noticias h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#otras-noticias p{
+    display: none;
+}
+
+/* Estilos cartas */
+#otras-noticias .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(img/Emergencia.jpg);
+}
+
+.carta:nth-child(2){
+background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/Chat_GPT.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(img/deportes.jpg);
+}
+
+/* Estilos de caracteristicas */
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+    color: white;
+    background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(img/Presentacion_noticias\ .gif);
+        background-size: cover;
+        background-position: center center;
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#mas-noticias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(img/GTR.jpg);
+                background-size: cover;
+                background-position: center center;
+                height: 80vh;
+
+}
+/* Tamaño Titulo */
+#mas-noticias h2 {
+    font-size: 9vw;
+}
+
+/* Tamaño boton */
+#mas-noticias button {
+    font-size: 5vw;
+}
+
+/* Seccion de contacto */
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    color: white;
+    background-image:linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/contacto.gif);
+    background-size: cover;
+    background-position: center center;     
+}
+
+th{
+    margin: 0;
+    padding:  3px 30px;
+    text-align: center;
+}
+
+
+/* Inicio */
+
+
+
+/* estilos footer */
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#inicio a {
+    height: 20px;
+    display: flex;
+    justify-content: right;
+    padding-right: 35px;
+    align-items: flex-end;
+    color: #000;
+}
+
+/* Estilos media query apartis de 850px */
+
+@media(min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #tecnologia .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #tecnologia .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #tecnologia h2{
+        margin-top: 0px;
+    }
+
+        #tecnologia .img-container {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url(img/Chat_GPT.jpg);
+            background-size: cover;
+            background-position: center, center;
+            height: 500px;
+            width: 400px;
+        }
+
+        #otras-noticias .noticias{
+            display: flex;
+            justify-content: center;
+        }
+
+        #otras.noticias p{
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        #otras-noticias h3{
+            margin-top: 0;
+        }
+
+        #otras-noticas .carta{
+            padding: 50px;
+            background-size: 100% 150%;
+            background-repeat: no-repeat;
+            background-position-y: 0;
+            background-color: rgba(50, 50, 50, 1);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0,0.5);
+        }
+
+}
+
+
+
+
+

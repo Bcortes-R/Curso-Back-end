@@ -1,0 +1,21 @@
+body{
+background-color: azure;
+background-repeat: no-repeat, repeat;
+background-size: cover;
+color: black;
+
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-transform: none;
+    text-align: justify;
+}
+p{
+    columns: 2;
+}
+img{
+    align-content: end;
+}
